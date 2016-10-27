@@ -1,4 +1,5 @@
 set encoding=utf-8
+set t_Co=256
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -19,14 +20,11 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'morhetz/gruvbox'
 Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim'
-"Plugin 'L9'
-"Plugin 'FuzzyFinder'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
-" Plugin 'valloric/youcompleteme'
 Plugin 'mkitt/tabline.vim'
 Plugin 'ervandew/supertab'
 Plugin 'sirver/ultisnips'
@@ -74,10 +72,11 @@ let g:ctrlp_custom_ignore = {
 \ }
 
 
-let g:airline_theme='gruvbox'
+let g:airline_theme='light'
 let g:airline#extensions#tabline#enabled = 1
  " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline_powerline_fonts = 1
 
 let mapleader = ","
 
@@ -90,6 +89,7 @@ set hlsearch            " highlight matches
 set foldenable          " enable folding
 set foldlevelstart=10   " open most folds by default
 set foldmethod=indent
+set ts=2 sts=2 sw=2
 
 nnoremap <space> za
 nnoremap <leader><space> :nohlsearch<CR>
