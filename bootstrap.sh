@@ -2,7 +2,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".aliases .vimrc .vim"        # list of files/folders to symlink in homedir
+files=".zshrc .aliases .vimrc .vim"        # list of files/folders to symlink in homedir
 
 ##########
 
@@ -24,5 +24,7 @@ for file in $files; do
     ln -s $dir/$file ~/$file
 done
 
+# install vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 source ~/.zshrc
-source ~/.vimrc

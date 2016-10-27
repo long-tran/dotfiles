@@ -7,7 +7,7 @@ DISABLE_AUTO_UPDATE="true"
 ENABLE_CORRECTION="false"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git httpie chucknorris)
+plugins=(git httpie)
 
 # User configuration
 
