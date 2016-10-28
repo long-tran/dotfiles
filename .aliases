@@ -29,3 +29,4 @@ alias be="cd ~/Codes/core-backend"
 
 alias ta="tmux attach -t"
 alias tn="tmux  new-session -n"
+alias tl="tmux list-session"

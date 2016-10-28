@@ -13,6 +13,7 @@ plugins=(git httpie)
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
+export TERMINAL="terminator"
 
 source $ZSH/oh-my-zsh.sh
 

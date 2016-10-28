@@ -114,5 +114,6 @@ nnoremap <F7> :bprevious<CR>
 nnoremap <F8> :bnext<CR>
 nnoremap <C-t> :enew<CR>
 
+au BufNewFile,BufRead *.gsp set filetype=html
 
 set laststatus=2
