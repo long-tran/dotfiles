@@ -27,7 +27,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mkitt/tabline.vim'
 Plugin 'ervandew/supertab'
-Plugin 'sirver/ultisnips'
+"Plugin 'sirver/ultisnips'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'gabesoft/vim-ags'
 
@@ -117,3 +117,4 @@ nnoremap <C-t> :enew<CR>
 au BufNewFile,BufRead *.gsp set filetype=html
 
 set laststatus=2
+set guifont=Inconsolata-g\ for\ Powerline:h12
