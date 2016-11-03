@@ -30,6 +30,7 @@ Plugin 'ervandew/supertab'
 "Plugin 'sirver/ultisnips'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'gabesoft/vim-ags'
+" Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -47,7 +48,6 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endi
-
 
 " NERDTree {{{
 nmap <silent> <F3> :NERDTreeToggle<CR>
@@ -80,8 +80,9 @@ let g:airline_powerline_fonts = 1
 
 let mapleader = ","
 
-set tabstop=4
+set tabstop=2
 set expandtab
+set autoindent
 set cursorline
 set showmatch  
 set incsearch           " search as characters are entered
@@ -112,9 +113,13 @@ endif
 set hidden
 nnoremap <F7> :bprevious<CR>
 nnoremap <F8> :bnext<CR>
+nnoremap <F9> :bd<CR>
 nnoremap <C-t> :enew<CR>
 
 au BufNewFile,BufRead *.gsp set filetype=html
 
 set laststatus=2
 set guifont=Inconsolata-g\ for\ Powerline:h12
+
+
+set omnifunc=syntaxcomplete#Complete

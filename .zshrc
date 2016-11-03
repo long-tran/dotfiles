@@ -32,6 +32,7 @@ case $OS in
   'Linux')
     OS='Linux'
     alias ls='ls --color=auto'
+    export JAVA_HOME=/opt/jdk
     ;;
   'Darwin') 
     OS='Mac'
