@@ -145,7 +145,7 @@
     i3bar_command i3bar -t
     font pango: System San Francisco Display, FontAwesome 10
     status_command i3blocks
-    position bottom
+    position top
     strip_workspace_numbers yes
     height 25
     #bindsym button4 nop
