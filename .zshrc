@@ -33,6 +33,7 @@ case $OS in
     OS='Linux'
     alias ls='ls --color=auto'
     export JAVA_HOME=/opt/jdk
+    export PATH=$PATH:~/Tools/grails/bin:$JAVA_HOME/bin:~/Tools/groovy/bin
     ;;
   'Darwin') 
     OS='Mac'
