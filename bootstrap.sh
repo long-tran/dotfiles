@@ -30,6 +30,6 @@ echo "Changing shell to zsh"
 chsh -s /usr/bin/zsh
 zsh
 echo "Pacman: Installing firefox chromium nodejs mongodb git powerline ibus-unikey"
-sudo acman -S firefox chromium nodejs mongodb git powerline ibus-unikey
+sudo pacman -S firefox chromium nodejs mongodb git powerline ibus-unikey
 echo "Yaourt: Installing robomongo insomnia gitkraken visual-studio-code"
 yaourt -S robomongo insomnia gitkraken visual-studio-code
