@@ -2,7 +2,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".zshrc .tmux.conf .aliases .vimrc .vim"        # list of files/folders to symlink in homedir
+files=".zshrc .zsh_alias .vimrc .vim"        # list of files/folders to symlink in homedir
 
 ##########
 
@@ -21,10 +21,15 @@ for file in $files; do
     echo "Moving any existing dotfiles from ~ to $olddir"
     mv ~/$file $olddir
     echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/$file
+    cp $dir/$file ~/$file
 done
 
 # install vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-source ~/.zshrc
+echo "Changing shell to zsh"
+chsh -s /usr/bin/zsh
+zsh
+echo "Pacman: Installing firefox chromium nodejs mongodb git powerline ibus-unikey"
+sudo acman -S firefox chromium nodejs mongodb git powerline ibus-unikey
+echo "Yaourt: Installing robomongo insomnia gitkraken visual-studio-code"
+yaourt -S robomongo insomnia gitkraken visual-studio-code

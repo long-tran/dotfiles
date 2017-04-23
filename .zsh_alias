@@ -1,0 +1,3 @@
+alias ls='ls -AhF --color=auto'
+alias ll='ls -AhlF --color=auto'
+alias theme='~/bin/theme.sh '
